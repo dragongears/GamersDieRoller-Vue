@@ -1,6 +1,37 @@
 <template>
   <div id="app">
 
+    <!-- HEADER
+    ================================================== -->
+    <header class="site-header" role="banner">
+
+      <!-- NAVBAR
+      ================================================== -->
+      <div class="navbar-wrapper">
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="/"><img src="./assets/img/logo-small.png" alt=""></a>
+            </div>
+            <div class="navbar-collapse collapse">
+              <ul class="nav navbar-nav navbar-right">
+                <li class="active"><a href="index.html"><i class="glyphicon glyphicon-home"></i>Home</a></li>
+                <li><a href="help.html"><i class="glyphicon glyphicon-question-sign"></i>Help</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </header>
+
     <section>
       <div class="container">
         <div class="mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
@@ -37,10 +68,19 @@
 
 <style>
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: 'Raleway', Helvetica, sans-serif;
+  font-size: 16px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #2c3e50;
-  margin-top: 60px;
+  margin-top: 50px;
+}
+
+.nav i.glyphicon {
+  margin-right: 0.5em;
+}
+
+.mainbox {
+  margin-top: 50px;
 }
 </style>
