@@ -20,6 +20,8 @@ Dice.prototype.roll = function () {
 }
 
 Dice.prototype.type = [2, 3, 4, 6, 8, 10, 12, 16, 20, 30, 100]
+Dice.prototype.mult = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
+Dice.prototype.mod = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 0]
 
 Dice.prototype.modifierStr = function () {
   if (this.modifier < 0) {
