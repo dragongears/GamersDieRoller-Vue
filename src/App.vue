@@ -37,7 +37,7 @@
         <div class="mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
           <div class="panel panel-info" >
             <div class="panel-body" >
-              <die-panel v-bind:dice-in-hand="diceInHand"></die-panel>
+              <die-panel :dice-in-hand="diceInHand" :mult="mult" :type="type" :mod="mod"></die-panel>
             </div>
           </div>
         </div>
@@ -57,7 +57,10 @@
     name: 'app',
     data () {
       return {
-        diceInHand: new store.Dice()
+        diceInHand: new store.Dice(),
+        mult: store.Dice.prototype.mult,
+        type: store.Dice.prototype.type,
+        mod: store.Dice.prototype.mod
       }
     },
     components: {
