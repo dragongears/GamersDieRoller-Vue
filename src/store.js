@@ -12,7 +12,7 @@ function Dice (die, mult, mod) {
 
 Dice.prototype.roll = function () {
   this.result = 0
-  for (var x = 0; x < this.multiplier; x++) {
+  for (let x = 0; x < this.multiplier; x++) {
     this.result += Math.floor(Math.random() * this.die) + 1
   }
   this.result += this.modifier
